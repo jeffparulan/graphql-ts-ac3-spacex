@@ -1,38 +1,43 @@
 {
-  "name": "graphql-typescript-react",
+  "name": "graphql-ts-ac3-spacex",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.5",
-    "@testing-library/user-event": "^12.7.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.2",
-    "web-vitals": "^1.1.0"
+    "@apollo/client": "^3.3.10",
+    "@apollo/react-hooks": "^4.0.0",
+    "@types/jest": "24.0.11",
+    "@types/node": "11.13.5",
+    "@types/react": "16.8.13",
+    "@types/react-dom": "16.8.4",
+    "graphql": "^15.5.0",
+    "graphql-tag": "^2.11.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "2.1.8",
+    "typescript": "3.7.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "codegen": "graphql-codegen --config codegen.yml"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": "react-app"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@graphql-codegen/cli": "1.20.1",
+    "@graphql-codegen/typescript": "1.21.0",
+    "@graphql-codegen/typescript-operations": "1.17.14",
+    "@graphql-codegen/typescript-react-apollo": "2.0.6",
+    "dotenv-cli": "^2.0.0",
+    "gh-pages": "^3.1.0"
   }
 }
